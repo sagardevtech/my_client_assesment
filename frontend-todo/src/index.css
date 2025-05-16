@@ -1,0 +1,50 @@
+/* Add this to your global CSS file */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] + span::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + span {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+input[type="checkbox"]:checked + span::after {
+  display: block;
+}
+
+/* Button hover effects */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Add button hover effect */
+button:hover span {
+  transform: translateY(-1px);
+}
+
+/* List item hover effect */
+li:hover {
+  background-color: #f9fafb;
+}
+
+/* Input focus effect */
+input:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}

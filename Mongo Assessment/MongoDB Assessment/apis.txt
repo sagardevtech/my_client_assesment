@@ -1,0 +1,80 @@
+------------------------------------POST API-------------------------------------------
+
+http://localhost:2552/api/v1/item/itemsales
+
+{
+    "date": "2024-12-31",
+    "store": "Store Y",
+    "items": [
+        {
+            "name": "item1",
+            "quantity": 5,
+            "price": 15
+        },
+        {
+            "name": "item2",
+            "quantity": 3,
+            "price": 25
+        }
+    ]
+}
+
+
+-----------------------------------------------------------------GET API-----------------------------------------------
+
+http://localhost:2552/api/v1/item/revenuebystoremonth
+
+Result :-
+
+[
+    {
+        "store": "Store A",
+        "month": "2025-05",
+        "totalRevenue": 110,
+        "averagePrice": 15
+    },
+    {
+        "store": "Store B",
+        "month": "2024-12",
+        "totalRevenue": 110,
+        "averagePrice": 15
+    },
+    {
+        "store": "Store C",
+        "month": "2025-05",
+        "totalRevenue": 110,
+        "averagePrice": 15
+    },
+    {
+        "store": "Store D",
+        "month": "2025-05",
+        "totalRevenue": 110,
+        "averagePrice": 15
+    },
+    {
+        "store": "Store E",
+        "month": "2025-05",
+        "totalRevenue": 110,
+        "averagePrice": 15
+    },
+    {
+        "store": "Store H",
+        "month": "2025-05",
+        "totalRevenue": 220,
+        "averagePrice": 15
+    },
+    {
+        "store": "Store Y",
+        "month": "2024-12",
+        "totalRevenue": 150,
+        "averagePrice": 20
+    },
+    {
+        "store": "Store Z",
+        "month": "2024-12",
+        "totalRevenue": 110,
+        "averagePrice": 15
+    }
+]
+
+
